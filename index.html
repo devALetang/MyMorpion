@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyMorpion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>MyMorpion</h1>
+  <div class="game-container">
+    <div class="game-board">
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+    </div>
+  </div>
+  <div class="game-status">
+    <div class="player-turn"></div>
+    <div class="game-result"></div>
+    <button class="reset-button">Rejouer</button>
+  </div>
+  <div class="game-mode">
+    <button class="mode-button" data-mode="human">Joueur contre joueur</button>
+    <button class="mode-button" data-mode="robot">Joueur contre robot</button>
+  </div>
+
+  <div class="symbol-choice">
+    <input type="radio" id="x-choice" name="symbol-choice" value="X" checked>
+    <label for="x-choice">X</label>
+    <input type="radio" id="o-choice" name="symbol-choice" value="O">
+    <label for="o-choice">O</label>
+  </div>
+  
+  <div class="score">
+    <div>Joueur 1 : <span class="player1-score">0</span></div>
+    <div>Joueur 2 : <span class="player2-score">0</span></div>
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
